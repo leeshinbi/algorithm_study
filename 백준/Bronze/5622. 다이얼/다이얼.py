@@ -1,4 +1,4 @@
-def number_time(word):
+def number_count(word):
     dial = {
         'A': 3, 'B': 3, 'C': 3,
         'D': 4, 'E': 4, 'F': 4,
@@ -9,14 +9,13 @@ def number_time(word):
         'T': 9, 'U': 9, 'V': 9,
         'W': 10, 'X': 10, 'Y': 10, 'Z': 10
     }
-    
+
     time = 0
     for char in word:
         time += dial[char]
-        
     return time
 
 word = input().strip()
 
-result = number_time(word)
+result = number_count(word)
 print(result)
